@@ -67,3 +67,6 @@ This will start the back-end process at `http://localhost:3000`. If port 3000 is
 
 - json-server.json
 - src/main.tsx
+
+
+git remote set-url origin https://mohmohwin2010@github.com/mohmohwin2010/react-testing-practise.git
