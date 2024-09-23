@@ -8,7 +8,16 @@ describe("Greet", () => {
     render(<Greet name="Mosh" />);
 
     const heading = screen.getByRole("heading");
-    expect(heading).toBeInTheDocument();
+    expect(heading).toBeInTheDocument(); //is called a matcher
     expect(heading).toHaveTextContent(/ mosh/i);
+  });
+
+  it("should render Hello with the name when name is not provided ", () => {
+    //just type i
+    render(<Greet />);
+
+    const button = screen.getByRole("button");
+    expect(button).toBeInTheDocument(); //is called a matcher
+    expect(button).toHaveTextContent(/login/i);
   });
 });
